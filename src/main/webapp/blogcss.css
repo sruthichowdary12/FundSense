@@ -1,0 +1,399 @@
+/* Sticky Navbar */
+.sticky-nav {
+    display: flex; /* Make the navbar visible */
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s;
+    max-height: 60px;
+}
+
+/* Logo Styling */
+.logo-container1 {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 100px; 
+}
+
+.logo-img1 {
+    height: 80px;
+    width: 80px;
+    margin-right: 0.5rem;
+    transform: scale(3.5);
+    transform-origin: center;
+}
+
+/* Button Container */
+.button-container1 {
+   display: flex;
+    gap: 1rem;
+    margin-top: 5px; 
+}
+
+/* Navbar Buttons */
+.header-btn1 {
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
+    background-color: #6D5DE7;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.header-btn1:hover {
+    background-color: #584BB4;
+    border-color: #584BB4;
+}
+
+/* Primary Button */
+.primary-btn1 {
+    background-color: white;
+    color: #6D5DE7;
+    border: 1px solid #6D5DE7;
+}
+
+.primary-btn1:hover {
+    background-color: #F2F0FF;
+}
+
+/* Adjust padding for main content to prevent overlap with navbar */
+.main-content {
+    padding-top: 80px; /* Adjust padding to prevent overlap with navbar */
+}
+
+/* Styling for the header section */
+.header-section {
+    text-align: center;
+    padding: 50px 20px;
+    color: #6D5DE7;
+    margin-top: 40px;
+}
+
+.main-heading {
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #6D5DE7;
+    margin-bottom: 20px;
+}
+
+/* Search bar styling */
+/* Centering the search wrapper */
+.search-wrapper {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if necessary */
+    margin-top: 20px;
+}
+
+/* Search bar styling with improved border */
+.search-bar-container {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 500px; /* Set fixed width for consistent appearance */
+}
+
+.search-input {
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+    font-size: 1em;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px;
+    background-color: #b793fb;
+    border: none;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Suggestions styling */
+.suggestions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+.suggestions span {
+    color: #aaa;
+}
+
+.suggestion-link:hover {
+    background-color: #584BB4;
+    color: #fff;
+}
+
+/* Styling for featured blogs section */
+.featured-blogs-section {
+    padding: 20px;
+}
+
+.featured-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.featured-title {
+    font-size: 40px;
+    font-weight: bold;
+    color:  #6D5DE7;
+}
+
+.browse-more {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.browse-more img {
+    width: 17px;
+    margin-left: 5px;
+}
+
+.blogs-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: -20px;
+    margin-bottom: 60px;
+}
+
+.left-blog, .right-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+}
+
+.blog-text-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* Space between text and image for left blogs */
+}
+
+.blog-text-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Space between image and text for right blogs */
+}
+
+.blog-title {
+    font-size: 35px;
+    color: #6A0DAD;
+    margin: 5px 0;
+}
+
+.blog-date {
+    font-size: 25px;
+    color: #555;
+}
+
+.blog-image {
+    width: 150px; /* Adjust this size as needed */
+    height: auto;
+    border-radius: 8px;
+}
+
+.blog-gap {
+    width: 20px; /* Space between left and right blog */
+}
+
+/* Styling for recent posts section */
+.recent-posts-section {
+    padding: 20px;
+}
+
+.recent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recent-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #6D5DE7;
+}
+
+.recent-browse-more {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.recent-browse-more img {
+    width: 17px;
+    margin-left: 5px;
+}
+
+.recent-posts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two posts per row */
+    gap: 20px; /* Space between posts */
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+.recent-post {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recent-title {
+    font-size: 35px;
+    color: #6A0DAD;
+    margin: 5px 0;
+}
+
+.recent-date {
+    font-size: 25px;
+    color: #555;
+}
+
+.recent-image {
+    width: 150px; /* Adjust this size as needed */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    max-width: auto;
+}
+
+.footer-brand {
+    max-width: 300px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.footer-logo {
+    width: 180px;
+    margin-top: -60px;
+    margin-bottom: -50px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    min-width: 150px;
+}
+
+.footer-section h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #c4c4c4;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.subscribe-section input[type="email"] {
+    padding: 10px;
+    font-size: 0.9em;
+    border: 1px solid #333;
+    border-radius: 5px 0 0 5px;
+    width: 180px;
+    color: #000;
+}
+
+.subscribe-button {
+    padding: 10px 15px;
+    font-size: 0.9em;
+    border: none;
+    background-color: #6C4CE3;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #5740c2;
+}
+
+/* Copyright */
+.footer p {
+    font-size: 0.8em;
+    color: #c4c4c4;
+    margin: 15px 0 0;
+}

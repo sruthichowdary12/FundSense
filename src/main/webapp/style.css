@@ -1,0 +1,683 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Background styling for the top section */
+.background {
+    background-color: #EAE6FF;
+    width: 100vw;
+    padding: 1rem 0;
+}
+
+.content-container {
+    max-width: 1200px;
+    max-height:20px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #6D5DE7;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.rocket-img {
+    height: 30px;
+    width: 30px;
+}
+
+.news-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.read-more-btn {
+    padding: 8px 16px;
+    border: 1px solid #6D5DE7;
+    color: #6D5DE7;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.read-more-btn a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.read-more-btn:hover {
+    background-color: #6559C1;
+    border-color: #6559C1;
+    color: white;
+}
+
+/* Adjusted Header Styling */
+.header {
+    background-color: #6D5DE7;
+    padding: 0.5rem 0; /* Decreased padding */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px; /* Moves the header section upwards */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 50px; 
+}
+
+.logo-img {
+    height: 80px;
+    width: 80px;
+    margin-right: 0.5rem;
+    transform: scale(3.5);
+    transform-origin: center;
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 5px; 
+}
+
+.header-btn {
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.header-btn:hover {
+    background-color: #584BB4;
+    border-color: #584BB4;
+}
+
+.primary-btn {
+    background-color: white;
+    color: #6D5DE7;
+}
+
+.primary-btn:hover {
+    background-color: #F2F0FF;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 2rem;
+    padding: 3rem 0;
+    margin-top: -50px;
+}
+
+.left-content {
+    flex: 1;
+    color: white;
+    margin-top: 20px; /* Moves the left content down */
+    margin-left: 20px; /* Reduce left margin */
+}
+
+.right-content {
+    flex: 1;
+    position: relative;
+}
+
+.main-img {
+    width: 90%; /* Adjust image size */
+    border-radius: 8px;
+}
+
+.top-right-img {
+    position: absolute;
+    top: 10px; 
+    left: -50px; 
+    width: 160px; 
+    height: 120px; 
+    border-radius: 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.top-left-img {
+    position: absolute;
+    bottom: 180px; 
+    right: 20px; 
+    width: 160px; 
+    height: 120px; 
+    border-radius: 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.left-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.left-content p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.caption-line {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.play-icon {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    color: #6D5DE7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 18px;
+}
+
+.play-icon:hover {
+    background-color: #F2F0FF;
+    color: #6559C1;
+}
+
+.main-content {
+    background-color: #6D5DE7;
+    padding: 3rem 0;
+    color: white;
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.main-content .highlight {
+    color: #F7EFFF;
+}
+
+.main-content p {
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+}
+
+/* Features Section */
+.features-section {
+        padding: 30px 0;
+        background-color: #f9f9f9;
+    }
+
+    .features-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .feature-item {
+        flex: 0 1 auto;
+        max-width: 120px;
+        text-align: center;
+        position: relative;
+        padding-bottom: 5px;
+        cursor: pointer;
+        margin: 0 2px;
+    }
+
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 4px;
+    }
+
+    .feature-item h3 {
+        font-size: 1.1em;
+        margin-bottom: 5px;
+        color: #333;
+        font-weight: normal;
+    }
+
+	.white-text {
+    color: black;
+}
+
+.purple1-text {
+    color: #6D5DE7;
+}
+	
+    /* Add the underline (invisible by default) */
+    .feature-item:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: #6D5DE7;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: width 0.3s ease-in-out;
+    }
+
+    /* When clicked, the underline is shown */
+    .feature-item.active:after {
+        width: 100%;
+    }
+
+    /* Styles for the details section */
+   /* Feature Details Section */
+.feature-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 30px;
+}
+
+.feature-details-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Left side: Title, Hashtags, Description */
+.feature-details-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.feature-details-image {
+    flex: 1;
+}
+
+.feature-details-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Title Styling */
+.black-text {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.purple-text {
+    color: #6D5DE7;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* Hashtags Styling */
+.hashtags {
+    margin: 10px 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.hashtags span {
+    margin-right: 8px;
+    color: #888;
+}
+
+/* Description Styling */
+#feature-details-description {
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Container styling */
+.beige-container {
+    background-color: #fefaf1; /* Light beige background */
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 40px 0;
+    color: #333; /* Darker color for text readability */
+}
+
+/* Heading styling */
+.beige-container h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.beige-container .highlight-text {
+    color: #6b4ce6; /* Purple color for highlighted text */
+}
+
+/* Subheading styling */
+.subheading {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+/* Stats section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2em;
+    color: #6b4ce6; /* Purple color for stats */
+    font-weight: bold;
+    margin: 0;
+}
+
+.stat-item p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* CTA button styling */
+.cta-button {
+    margin-top: 30px;
+    padding: 12px 20px;
+    font-size: 1em;
+    color: #6b4ce6;
+    background: none;
+    border: 2px solid #6b4ce6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #6b4ce6;
+    color: #fff;
+}
+
+/* Footer */
+/* CTA Section */
+.cta-section {
+    background-color: #6C4CE3;
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+}
+
+.cta-section h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.cta-section p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #6C4CE3;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.cta-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer-brand {
+    max-width: 300px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.footer-logo {
+    width: 180px;
+    margin-top: -60px;
+    margin-bottom: -50px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    min-width: 150px;
+}
+
+.footer-section h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #c4c4c4;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.subscribe-section input[type="email"] {
+    padding: 10px;
+    font-size: 0.9em;
+    border: 1px solid #333;
+    border-radius: 5px 0 0 5px;
+    width: 180px;
+    color: #000;
+}
+
+.subscribe-button {
+    padding: 10px 15px;
+    font-size: 0.9em;
+    border: none;
+    background-color: #6C4CE3;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #5740c2;
+}
+
+/* Copyright */
+.footer p {
+    font-size: 0.8em;
+    color: #c4c4c4;
+    margin: 15px 0 0;
+}
+
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px; 
+    z-index: 1000; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 20px; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+    background-color: transparent; 
+}
+
+.sticky-nav.sticky {
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+        .sticky-nav {
+            display: none; /* Initially hidden */
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: transparent;
+            padding: 10px;
+            z-index: 1000;
+            transition: background 0.3s;
+        }
+
+        .sticky-nav.scrolled {
+            display: flex;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .sticky-nav .logo-img {
+            height: 40px; /* Adjust the logo height */
+        }
+
+        .sticky-nav .header-btn {
+            margin-left: 20px;
+            text-decoration: none;
+            color: black; /* Change to the desired text color */
+        }
+
+.logo-container1 {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 100px; 
+}
+
+.logo-img1 {
+    height: 80px;
+    width: 80px;
+    margin-right: 0.5rem;
+    transform: scale(3.5);
+    transform-origin: center;
+}
+
+.button-container1 {
+    display: flex;
+    gap: 1rem;
+    margin-top: 5px; 
+}
+
+.header-btn1 {
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
+    background-color: #6D5DE7;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.header-btn1:hover {
+    background-color: #584BB4;
+    border-color: #584BB4;
+}
+
+.primary-btn1 {
+    background-color: white;
+    color: #6D5DE7;
+    border-color: black;
+}
+
+.primary-btn1:hover {
+    background-color: #F2F0FF;
+}
+
